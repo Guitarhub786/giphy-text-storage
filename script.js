@@ -59,7 +59,7 @@ function parseText() {
 
 
   for (let i = 0; i < parse.length; i++) {
-    let uber = fetch(`https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}=${parse[i]}&limit=${count + 1}&offset=${ping2}&rating=G&lang=en`);
+    let uber = fetch(`https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${parse[i]}&limit=${count + 1}&offset=${ping2}&rating=G&lang=en`);
 
 
     uber
